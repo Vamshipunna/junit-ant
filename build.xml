@@ -38,7 +38,7 @@
         </junitlauncher>
     </target>
 
-    <!-- https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher
+    <!-- https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher -->
     <target name="test.console.launcher" depends="compile">
         <java classpathref="test.classpath" classname="org.junit.platform.console.ConsoleLauncher" fork="true" failonerror="true">
             <arg value="--scan-classpath"/>
@@ -50,7 +50,7 @@
             </fileset>
             <report format="frames" todir="build/test-report/html"/>
         </junitreport>
-    </target>  -->
+    </target>  
 
     <target name="test" depends="test.junit.launcher, test.console.launcher" />
 
