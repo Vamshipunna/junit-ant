@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("clone"){
       steps{
-        git clone https://github.com/Vamshipunna/junit-ant.git
+        echo "clone"
       }
     }
     stage("build"){
